@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+       <title>Personal contact</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+	<body>	
+	<div class="container">
+		<!-- <form> -->
+			<img src="img/kafeero.jpeg.jpg" width="100px" alt="my picture">
+			
+			<h1>Add contact</h1>
+	    <div>
+					<label>Name: </label>
+					<input type="text" name="firstname">	
+				</div>
+				<div>
+					<label>Phone: </label>
+					<input type="text" name="phone">
+				</div>
+				<input type="submit" onclick="saveContact()">
+		<!-- </form> -->
+	</div>
+
+	<div>
+		<h1>Search contact</h1>
+		<input type="text" name="search_phrase">	
+		<input value="Search" type="submit" onclick="searchContacts()">
+		<p><b>Results</b></p>
+		<p id="result"></p>
+		<p class="blank">Not found what you are looking for?</p>
+	</div>
+
+
+		
+	
+</body>
+</html>
